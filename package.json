@@ -3,11 +3,12 @@
   "version": "3.0.0",
   "type": "module",
   "scripts": {
-  "dev": "vitepress dev",
-  "build": "vitepress build",
+    "dev": "vitepress dev",
+    "build": "vitepress build",
     "preview": "vitepress preview",
     "format": "yarn prettier --check ./docs ./examples ./scripts index.md",
-    "format:fix": "yarn prettier --check --write ./docs ./examples ./scripts index.md"
+    "format:fix": "yarn prettier --check --write ./docs ./examples ./scripts index.md",
+    "deploy": "vitepress build && npx gh-pages -d .vitepress/dist"
   },
   "repository": "",
   "author": "Guna Sekhar<sekharguna2018@gmail.com>",
@@ -16,6 +17,7 @@
   "devDependencies": {
     "@shikijs/vitepress-twoslash": "^1.23.0",
     "@types/node": "^22.13.1",
+    "gh-pages": "^6.3.0",
     "hono": "^4.6.3",
     "prettier": "^3.3.2",
     "tsx": "^4.19.2",

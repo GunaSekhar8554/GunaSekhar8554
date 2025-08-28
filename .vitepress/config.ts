@@ -347,6 +347,7 @@ export const sidebarsExamples = (): DefaultTheme.SidebarItem[] => [
 
 export default defineConfig({
   lang: 'en-US',
+  base: '/GunaSekhar8554/',
   title: 'Guna Sekhar',
   description:
     'Guna Sekhar’s personal portfolio and blog. Sharing IT, technical insights, and interesting discoveries.',
@@ -404,6 +405,13 @@ export default defineConfig({
       {
         property: 'og:image',
         content: '/images/logo.png',
+      },
+    ],
+    [
+      'meta',
+      {
+        name: 'algolia-site-verification',
+        content: 'CF2B35C5891387DF',
       },
     ],
     ['meta', { property: 'og:type', content: 'website' }],
